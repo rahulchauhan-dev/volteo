@@ -2,7 +2,7 @@ import React from "react";
 
 const CrewIDCard = () => {
   return (
-    <div className="shadow-sm bg-white p-4 border-2 rounded-md">
+    <div className="shadow-sm bg-white p-4 border-2 rounded-md min-w-[315px]">
       <div className="flex justify-between mb-6">
         <img src="/assets/jpgs/hand.jpg" alt="hand"></img>
         <img src="/assets/jpgs/navy-chart.jpg" alt="chart"></img>

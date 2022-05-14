@@ -2,7 +2,7 @@ import React from "react";
 
 const StatementCard = () => {
   return (
-    <div className="mt-2 shadow-sm bg-white p-4 border-2 rounded-md">
+    <div className="mt-2 shadow-sm bg-white p-4 border-2 rounded-md min-w-[315px]">
       <div className="flex justify-between mb-6">
         <img src="/assets/svgs/cargo-ship.svg" alt="cargo"></img>
         <p className="text-2xl font-semibold self-center">SGSIN - NOOSL</p>
