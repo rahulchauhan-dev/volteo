@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import CrewIDCard from "./components/CrewIDCard";
+import NoticeCard from "./components/NoticeCard";
+import SideBarNav from "./components/SideBarNav";
+import StatementCard from "./components/StatementCard";
+import ToDoCard from "./components/ToDoCard";
+import TopBar from "./components/TopBar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="m-2">
+      <SideBarNav />
+      <div className="ml-[7.5rem]">
+        <TopBar />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-2 ">
+          <div>
+            <CrewIDCard />
+            <StatementCard />
+          </div>
+          <div>
+            <NoticeCard />
+          </div>
+          <div>
+            <ToDoCard />
+          </div>
+        </div>
+      </div>
+    </main>
   );
 }
 
